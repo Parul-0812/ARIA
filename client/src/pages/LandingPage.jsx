@@ -46,50 +46,78 @@ const handleDemoContinue = () => {
     <div className="min-h-screen bg-[#FAF9FC] text-[#24212F]">
 
       {/* Navigation */}
-<header className="sticky top-0 z-50 border-b border-[#E8DFDB] bg-[#FFFCFA]/95 backdrop-blur-sm">
-  <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-    {/* Brand */}
-    <Link to="/" className="group flex flex-col">
-      <span className="text-2xl font-semibold tracking-[-0.06em] text-[#292522]">
-        ARIA<span className="text-[#D96643]">.</span>
-      </span>
-      <span className="mt-0.5 text-[11px] tracking-[0.08em] text-[#81736D]">
-        EVERYDAY WELLBEING
-      </span>
-    </Link>
 
-    {/* Navigation */}
-    <div className="flex items-center gap-5 sm:gap-9">
-      <a
-        href="#how-it-works"
-        className="text-sm text-[#625852] transition-colors hover:text-[#D96643]"
-      >
-        How it works
-      </a>
+      {/* Navigation */}
+      <header className="sticky top-0 z-50 border-b border-[#E5DDD0] bg-[#F3EEE5]">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
+          {/* Brand */}
+          
+{/* Brand logo */}
+<Link to="/" className="flex shrink-0 items-center">
+  <img
+  src="/mytrueday-logo.png"
+  alt="MyTrueDay — everyday wellbeing"
+  className="h-auto w-48 object-contain sm:w-80"
+/>
+</Link>
 
-      <Link
-        to="/privacy"
-        className="hidden text-sm text-[#625852] transition-colors hover:text-[#D96643] sm:inline-block"
-      >
-        Privacy
-      </Link>
 
-      <Link
-        to="/login"
-        className="text-sm text-[#625852] transition-colors hover:text-[#D96643]"
-      >
-        Sign in
-      </Link>
+          {/* Desktop navigation */}
+          <div className="hidden items-center gap-7 md:flex">
+            <a
+              href="#features"
+              className="text-sm text-[#51473E] transition-colors hover:text-[#68704B]"
+            >
+              Features
+            </a>
 
-      <Link
-        to="/register"
-        className="rounded-md bg-[#D96643] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#BF5638] sm:px-5"
-      >
-        Get started
-      </Link>
-    </div>
-  </nav>
-</header>
+            <a
+              href="#how-it-works"
+              className="text-sm text-[#51473E] transition-colors hover:text-[#68704B]"
+            >
+              How it works
+            </a>
+
+            <Link
+              to="/privacy"
+              className="text-sm text-[#51473E] transition-colors hover:text-[#68704B]"
+            >
+              Privacy
+            </Link>
+
+            <Link
+              to="/login"
+              className="text-sm text-[#51473E] transition-colors hover:text-[#68704B]"
+            >
+              Sign in
+            </Link>
+
+            <Link
+              to="/register"
+              className="rounded-md bg-[#68704B] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#555D3D]"
+            >
+              Get started
+            </Link>
+          </div>
+
+          {/* Mobile navigation */}
+          <div className="flex items-center gap-3 md:hidden">
+            <Link
+              to="/login"
+              className="text-sm text-[#51473E] hover:text-[#68704B]"
+            >
+              Sign in
+            </Link>
+
+            <Link
+              to="/register"
+              className="rounded-md bg-[#68704B] px-3.5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#555D3D]"
+            >
+              Get started
+            </Link>
+          </div>
+        </nav>
+      </header>
 
       {/* Hero */}
 <main>
