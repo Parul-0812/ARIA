@@ -46,60 +46,50 @@ const handleDemoContinue = () => {
     <div className="min-h-screen bg-[#FAF9FC] text-[#24212F]">
 
       {/* Navigation */}
-      <header className="border-b border-[#E7E4EE] bg-[#FAF9FC]">
-        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 sm:px-8">
+<header className="sticky top-0 z-50 border-b border-[#E8DFDB] bg-[#FFFCFA]/95 backdrop-blur-sm">
+  <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
+    {/* Brand */}
+    <Link to="/" className="group flex flex-col">
+      <span className="text-2xl font-semibold tracking-[-0.06em] text-[#292522]">
+        ARIA<span className="text-[#D96643]">.</span>
+      </span>
+      <span className="mt-0.5 text-[11px] tracking-[0.08em] text-[#81736D]">
+        EVERYDAY WELLBEING
+      </span>
+    </Link>
 
-          <Link to="/" className="group">
-            <div className="text-xl font-semibold tracking-tight text-[#66547F]">
-              ARIA
-            </div>
+    {/* Navigation */}
+    <div className="flex items-center gap-5 sm:gap-9">
+      <a
+        href="#how-it-works"
+        className="text-sm text-[#625852] transition-colors hover:text-[#D96643]"
+      >
+        How it works
+      </a>
 
-            <div className="mt-0.5 text-[11px] tracking-wide text-[#8B8693]">
-              everyday wellbeing
-            </div>
-          </Link>
+      <Link
+        to="/privacy"
+        className="hidden text-sm text-[#625852] transition-colors hover:text-[#D96643] sm:inline-block"
+      >
+        Privacy
+      </Link>
 
-          <nav className="hidden items-center gap-8 text-sm text-[#777282] sm:flex">
-            <a
-              href="#how-it-works"
-              className="transition hover:text-[#24212F]"
-            >
-              How it works
-            </a>
+      <Link
+        to="/login"
+        className="text-sm text-[#625852] transition-colors hover:text-[#D96643]"
+      >
+        Sign in
+      </Link>
 
-            <a
-              href="#privacy"
-              className="transition hover:text-[#24212F]"
-            >
-              Privacy
-            </a>
-
-            <Link
-              to="/login"
-              className="transition hover:text-[#24212F]"
-            >
-              Sign in
-            </Link>
-
-            <Link
-              to="/register"
-              className="rounded-lg bg-[#66547F] px-4 py-2.5 font-medium text-white transition hover:bg-[#57456E]"
-            >
-              Get started
-            </Link>
-          </nav>
-
-          <div className="sm:hidden">
-            <Link
-              to="/login"
-              className="text-sm font-medium text-[#66547F]"
-            >
-              Sign in
-            </Link>
-          </div>
-
-        </div>
-      </header>
+      <Link
+        to="/register"
+        className="rounded-md bg-[#D96643] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#BF5638] sm:px-5"
+      >
+        Get started
+      </Link>
+    </div>
+  </nav>
+</header>
 
       {/* Hero */}
 <main>
@@ -116,9 +106,9 @@ const handleDemoContinue = () => {
 
       {/* Hero copy */}
       <div>
-        <p className="text-sm font-medium tracking-wide text-[#D96F4A]">
-          A space for everyday wellbeing
-        </p>
+        <p className="text-lg font-medium tracking-wide text-[#D96643] sm:text-xl">
+  A space for everyday wellbeing
+</p>
 
         <h1 className="mt-6 max-w-2xl text-5xl font-semibold leading-[1.05] tracking-[-0.035em] text-[#242522] sm:text-6xl lg:text-[4.5rem]">
           Make a little more sense of how you feel.
